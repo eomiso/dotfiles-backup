@@ -17,12 +17,20 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>wq :wq<CR>
 nnoremap <Leader>qq :q<CR>
 nnoremap <Leader>qa :qa<CR>
-nnoremap <Leader>s :sp<CR>
+nnoremap <Leader>sp :sp<CR>
 nnoremap <Leader>v :vsp<CR>
+''
 nnoremap <Leader>p :echo expand('%')<CR>
 
 " Delete selected area and replace with yanked content
 vnoremap <Leader>p "_dP
+
+"Neovim terminal
+tnoremap <Esc> <C-\><C-n>
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
 
 " <C-c> and <ESC> are not the same
 " inoremap <C-c> <ESC>
@@ -68,9 +76,14 @@ xnoremap K :call MoveUp(v:count1)<CR>
 
 
 " <leader> + hjkl to resize windows
-nnoremap <Leader>k :resize -2<CR>
-nnoremap <Leader>j :resize +2<CR>
-nnoremap <Leader>h :vertical resize -2<CR>
-nnoremap <Leader>l :vertical resize +2<CR>
+nnoremap <Leader>K :resize -2<CR>
+nnoremap <Leader>J :resize +2<CR>
+nnoremap <Leader>H :vertical resize -2<CR>
+nnoremap <Leader>L :vertical resize +2<CR>
+
+" To incease or decrease the window size by a factor of 1.5, and decrease the
+" window size by 0.67
+nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
 
