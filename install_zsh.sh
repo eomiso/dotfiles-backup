@@ -39,6 +39,7 @@ installing "autojump"
 git clone --depth=1 https://github.com/wting/autojump.git ~/_autojump
 ~/_autojump/install.py
 rm -rf ~/_autojump
+" if this doesn't work just use brew install autojump
 
 installing "direnv"
 curl -sfL https://direnv.net/install.sh | bin_path=~/.local/bin bashc
