@@ -1,5 +1,12 @@
 #!/bin/zsh
 
+installing "Zsh"
+wget -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
+mkdir zsh && unxz zsh.tar.xz && tar -xvf zsh.tar -C zsh — strip-components 1
+cd zsh && ./configure — prefix=$HOME
+make && make install
+
+
 installing "Oh-my-zsh"
 export RUNZSH=no
 export KEEP_ZSHRC=yes
