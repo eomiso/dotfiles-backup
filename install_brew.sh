@@ -1,6 +1,7 @@
 mv $HOME
 mkdir .local/homebrew/ && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C ./.local/homebrew
-
+cd ~/.local
+git -C $(brew --repo homebrew/core) checkout master
 
 brew install nvim
 brew install tmux
