@@ -68,6 +68,7 @@ File structure
     ├── .p10k.zsh
     ├── .tmux.conf
     ├── .zshrc
+    ├── .gitmessage
     ├── README.md
     ├── install_brew.sh
     ├── install_nvim.sh
