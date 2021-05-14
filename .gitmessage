@@ -24,6 +24,8 @@
 #    license  (Edits regarding licensing; no production code change)
 #    hack     (Temporary fix to make things move forward; please avoid it)
 #    WIP      (Work In Progress; for intermediate commits to keep patches reasonably sized)
+#    exp      (Experimenting)
+#    misc     (miscellaneous stuff such as .gitignore file)
 #    defaults (changes default options)
 #
 # Note: Multiple tags can be combined, e.g. [fix][jsr292] Fix issue X with methodhandles
