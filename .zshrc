@@ -151,3 +151,4 @@ export MANWIDTH=999
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias chrome="open -a 'Google Chrome'"
