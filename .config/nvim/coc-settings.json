@@ -1,4 +1,12 @@
 {
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.colorSupport": true,
+  "coc.preferences.formatOnTypeFiletypes": ["python"],
+
+  "python.linting.enabled": true,
+  "python.linting.pep8Enabled": true,
+  "python.formatting.provider": "yapf",
+
   "languageserver": {
       "ocaml": {
         "command": "ocaml-language-server",
