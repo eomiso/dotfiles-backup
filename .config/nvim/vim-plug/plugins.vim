@@ -1,4 +1,4 @@
-call plug#begin(stdpath('data') . 'plugged')
+call plug#begin(stdpath('data') . '/plugged')
 " editing
 " Plug 'editorconfig/editorconfig-vim'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -11,6 +11,7 @@ call plug#begin(stdpath('data') . 'plugged')
   Plug 'kyazdani42/nvim-web-devicons'
 " Plug 'sainnhe/sonokai'
   Plug 'sainnhe/gruvbox-material'
+  Plug 'sonph/onehalf', { 'rtp': 'vim' }
 " Plug 'gruvbox-community/gruvbox'
   Plug 'andreypopp/vim-colors-plain'
   Plug 'romgrk/barbar.nvim'
@@ -19,6 +20,7 @@ call plug#begin(stdpath('data') . 'plugged')
 " Plug 'airblade/vim-gitgutter'
 " navigation
   Plug 'scrooloose/nerdtree', {'on': ['NERDTreeToggle', 'NERDTreeFind']}
+" if there is error in the preview box try reinstalling bat
   Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'

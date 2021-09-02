@@ -35,7 +35,7 @@ set diffopt+=indent-heuristic   " Internal diff lib for indents
 
 " appearance
 set showmatch                   " Highlight matching braces
-set guicursor=                  " Use terminal-default cursor shape
+"set guicursor=                  " Use terminal-default cursor shape
 "set background=dark             " Dark background
 set number relativenumber       " Show relative line number
 
@@ -43,7 +43,7 @@ set number relativenumber       " Show relative line number
 
 " misc
 set iskeyword+=-		" treat dash separated words as a word text object
-"set mouse=a                     " Mouses are useful for visual selection
+set mouse=a                     " Mouses are useful for visual selection
 set history=256                 " History for commands, searches, etc
 
 " Embed lua syntax highlighting in vimscript

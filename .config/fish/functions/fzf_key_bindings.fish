@@ -1,1 +1,0 @@
-/csehome/ytrtef/.fzf/shell/key-bindings.fish
