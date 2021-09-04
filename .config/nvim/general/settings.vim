@@ -45,6 +45,7 @@ set number relativenumber       " Show relative line number
 set iskeyword+=-		" treat dash separated words as a word text object
 set mouse=a                     " Mouses are useful for visual selection
 set history=256                 " History for commands, searches, etc
+set clipboard=unnamed            " use OS clipbord"
 
 " Embed lua syntax highlighting in vimscript
 let g:vimsyn_embed = 'l'
