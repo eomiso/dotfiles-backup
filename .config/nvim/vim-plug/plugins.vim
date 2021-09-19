@@ -24,6 +24,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
+  Plug 'majutsushi/tagbar'
 call plug#end()
 
 " =============================================================================
