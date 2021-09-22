@@ -1,7 +1,6 @@
 #install nvim
-#install nvim
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz
-tar xzvf nvim-linux64.tar.gz ~/.local/tmp
+curl -LO https://github.com/neovim/neovim/releases/download/v0.5.0/nvim-macos.tar.gz
+tar -xzvf nvim-osx64.tar.gz -C ~/.local
 
 # you might have to set $VIMRUNTIME to .local/tmp/nvim-linux64/share/nvim/runtime/
 
