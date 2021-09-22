@@ -41,4 +41,10 @@ autocmd VimResized * execute "normal! \<c-w>="
 " Highlight yanked text
 autocmd TextYankPost * lua require'vim.highlight'.on_yank({"Substitute", 300})
 
+" After this pressing gr on the local variable will bring you to 
+" :s command where you simply should enter new_variable_name and press Enter
+" For local replace
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
 
+" For global replace
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
