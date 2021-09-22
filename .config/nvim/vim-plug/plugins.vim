@@ -5,6 +5,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'kiteco/vim-plugin'
   Plug 'jiangmiao/auto-pairs'
   Plug 'FooSoft/vim-argwrap'
+  Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 " appearance
   Plug 'vim-airline/vim-airline'
 " Plug 'dracula/vim',{'as':'dracula'}
@@ -25,6 +26,8 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
   Plug 'majutsushi/tagbar'
+" File renaming
+  Plug 'tpope/vim-eunuch'
 call plug#end()
 
 " =============================================================================
