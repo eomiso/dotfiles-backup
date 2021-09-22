@@ -39,8 +39,6 @@ set showmatch                   " Highlight matching braces
 "set background=dark             " Dark background
 set number relativenumber       " Show relative line number
 
-
-
 " misc
 set iskeyword+=-		" treat dash separated words as a word text object
 set mouse=a                     " Mouses are useful for visual selection
