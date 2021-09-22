@@ -104,7 +104,7 @@ alias chrome="open -a 'Google Chrome'"
 
 # nvim
 alias nconf="nvim $HOME/.config/nvim/init.vim"
-alias vi="nvim"
+alias vi="~/.local/nvim-osx64/bin/nvim"
 
 #-------------------------------------------------------------------
 # Environment variables
