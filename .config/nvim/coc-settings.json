@@ -2,6 +2,7 @@
   "coc.preferences.formatOnType": true,
   "coc.preferences.colorSupport": true,
   "coc.preferences.formatOnTypeFiletypes": ["python"],
+  "coc.preferences.rootPatterns": [".ccls", ".git/", ".hg", ".projections.json"],
 
   "python.linting.enabled": true,
   "python.linting.pep8Enabled": true,
