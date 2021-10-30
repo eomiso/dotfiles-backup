@@ -17,7 +17,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'andreypopp/vim-colors-plain'
   Plug 'romgrk/barbar.nvim'
 " git integration
-" Plug 'tpope/vim-fugitive' 
+  Plug 'tpope/vim-fugitive' 
 " Plug 'airblade/vim-gitgutter'
 " navigation
   Plug 'scrooloose/nerdtree', {'on': ['NERDTreeToggle', 'NERDTreeFind']}
