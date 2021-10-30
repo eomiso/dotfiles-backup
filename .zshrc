@@ -105,12 +105,13 @@ alias chrome="open -a 'Google Chrome'"
 # nvim
 alias nconf="nvim $HOME/.config/nvim/init.vim"
 alias vi="~/.local/nvim-osx64/bin/nvim"
+# alias nvim="~/.local/nvim-osx64/bin/nvim"
 
 #-------------------------------------------------------------------
 # Environment variables
 #-------------------------------------------------------------------
 # If you come from bash you might have to change your $PATH
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # /usr/local/lib should be in LD_LIBRARY_PATH
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
@@ -119,6 +120,7 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 export EDITOR="nvim"
 
 # nvim as manpage viewer
+export PATH=$HOME/.local/nvim-osx64/bin:$PATH
 export MANPAGER="nvim +Man!"
 export MANWIDTH=999
 
@@ -128,8 +130,34 @@ export MANWIDTH=999
 source "$HOME/.dotmodules/zshrc/machine-specific.sh"
 
 # For conda
-source ~/.bash_profile
+#source ~/.bash_profile
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export OBSIDIAN_VAULTS="/Users/eomiso/Library/Mobile Documents/iCloud~md~obsidian/Documents/"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/eomiso/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/eomiso/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/eomiso/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/eomiso/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+#
+#__conda_setup="$('/Volumes/ExternalSSD/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/Volumes/ExternalSSD/miniconda3/etc/profile.d/conda.sh" ]; then
+#        . "/Volumes/ExternalSSD/miniconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/Volumes/ExternalSSD/miniconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
