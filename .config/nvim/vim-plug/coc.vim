@@ -24,6 +24,9 @@ else
   set signcolumn=yes
 endif
 
+let g:node_client_debug = 0
+let $NODE_CLIENT_LOG_FILE = '/tmp/coc.log'
+
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imaptab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
