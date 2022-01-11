@@ -70,6 +70,7 @@ source "$HOME/.dotmodules/zshrc/python-env.sh"
 
 # The brew told me to add this path for ruby
 export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="/Users/eomiso/.gem/ruby/2.6.0/bin:$PATH"
 
 # I like keeping things here
 export PATH="$HOME/.local/bin:$PATH"
@@ -107,6 +108,7 @@ alias nconf="nvim $HOME/.config/nvim/init.vim"
 alias vi="~/.local/nvim-osx64/bin/nvim"
 # alias nvim="~/.local/nvim-osx64/bin/nvim"
 
+alias wakeubuntu="wakeonlan -i 175.117.50.208 -p 12300 40:8d:5c:cd:76:d7"
 #-------------------------------------------------------------------
 # Environment variables
 #-------------------------------------------------------------------
@@ -161,3 +163,8 @@ unset __conda_setup
 #    fi
 #fi
 #unset __conda_setup
+#
+
+# >>> keychain for cron tasks on github with ssh
+/usr/local/bin/keychain --clear $HOME/.ssh/diya-sum-rsa
+source $HOME/.keychain/$HOST-sh
