@@ -109,6 +109,7 @@ alias vi="~/.local/nvim-osx64/bin/nvim"
 # alias nvim="~/.local/nvim-osx64/bin/nvim"
 
 alias wakeubuntu="wakeonlan -i 175.117.50.208 -p 12300 40:8d:5c:cd:76:d7"
+alias connectbuntu="ssh ubuntu-home -L 5900:127.0.0.1:5900"
 #-------------------------------------------------------------------
 # Environment variables
 #-------------------------------------------------------------------
@@ -168,3 +169,4 @@ unset __conda_setup
 # >>> keychain for cron tasks on github with ssh
 /usr/local/bin/keychain --clear $HOME/.ssh/diya-sum-rsa
 source $HOME/.keychain/$HOST-sh
+
