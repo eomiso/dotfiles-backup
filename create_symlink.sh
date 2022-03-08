@@ -1,7 +1,5 @@
+ln -s ~/dotfiles/.bashrc ~/
 
-
-rm ~/.zshrc
-
-ln -s ~/dotfiles/.zshrc ~/
-
-ln -s ~/dotfiles/.config ~/
+ln -s ~/dotfiles/.config/coc ~/.config/
+ln -s ~/dotfiles/.config/nvim ~/.config/
+ln -s ~/dotfiles/.config/fish ~/.config/
