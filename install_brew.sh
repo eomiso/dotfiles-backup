@@ -22,3 +22,5 @@ brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install the_silver_searcher
 
 brew install fd
+
+brew install node

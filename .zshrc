@@ -10,6 +10,7 @@ fi
 
 export PATH="$HOME/.local/homebrew/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/tmp/nvim-linux64/bin:$PATH"
 
 export VIMRUNTIME="$HOME/.local/tmp/nvim-linux64/share/nvim/runtime"
 alias vi="nvim"
@@ -27,7 +28,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 
 # Path to your oh-my-zsh installation.
-export ZSH="/csehome/ytrtef/.oh-my-zsh"
+export ZSH="/home/eomiso/.oh-my-zsh"
 
 
 
