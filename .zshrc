@@ -103,6 +103,10 @@ alias dl='dotfiles pull'
 alias ddf='dotfiles difftool'
 alias chrome="open -a 'Google Chrome'"
 
+# docker link
+alias ml-board-link="ssh -L 8123:127.0.0.1:6006 root@diya_server_surro -p 8082"
+alias ml-jupyter-link="ssh -L 8124:127.0.0.1:8888 root@diya_server_surro -p 8082"
+
 # nvim
 alias nconf="nvim $HOME/.config/nvim/init.vim"
 alias vi="~/.local/nvim-osx64/bin/nvim"
@@ -110,6 +114,10 @@ alias vi="~/.local/nvim-osx64/bin/nvim"
 
 alias wakeubuntu="wakeonlan -i 175.117.50.208 -p 12300 40:8d:5c:cd:76:d7"
 alias connectbuntu="ssh ubuntu-home -L 5900:127.0.0.1:5900"
+
+alias jupyteron="ssh -L 6123:127.0.0.1:8888 root@diya_server_surro -p 7072"
+alias tensorboardon="ssh -L 7123:127.0.0.1:6006 root@diya_server_surro -p 7072"
+
 #-------------------------------------------------------------------
 # Environment variables
 #-------------------------------------------------------------------
