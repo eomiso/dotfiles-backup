@@ -150,6 +150,6 @@ export PATH="$HOME/.local/nvim-linux64/bin:$PATH"
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
-alias snuospath="export PATH=\"$(pwd)/build:$PATH\""
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export PATH="/home/eomiso/Workspace/qemu-5.2.0/build:$PATH"
+

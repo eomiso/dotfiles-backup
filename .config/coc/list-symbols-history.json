@@ -2,5 +2,11 @@
   "L2NzZWhvbWUveXRydGVmL1Byb2dyYW1taW5nX0xhbmcvdGVzdA==": [
     "lsjdfi",
     "terminal"
+  ],
+  "L2hvbWUvZW9taXNvL1dvcmtzcGFjZS9wcm9jZXNzLWVvbWlzbw==": [
+    "mnt_drop_write"
+  ],
+  "L2hvbWUvZW9taXNvL1dvcmtzcGFjZS9wcm9jZXNzLWVvbWlzby9mcw==": [
+    "user_path_at"
   ]
 }

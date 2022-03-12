@@ -160,3 +160,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" for syntax highlight
+
+let g:coc_default_semantic_highlight_groups = 1

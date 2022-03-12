@@ -56,9 +56,9 @@ augroup CursorLine
 augroup END
 
 " Syntax highlighting
-if has("syntax")
-  syntax on
-endif
+"if has("syntax")
+syntax on
+"endif
 
 " Persistent undo
 if has('persistent_undo')

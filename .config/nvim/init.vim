@@ -13,4 +13,5 @@ source $HOME/.config/nvim/vim-plug/fzf.vim
 source $HOME/.config/nvim/vim-plug/auto-pair.vim
 source $HOME/.config/nvim/vim-plug/coc.vim
 source $HOME/.config/nvim/vim-plug/theme.vim
+source $HOME/.config/nvim/vim-plug/treesitter.vim
 
