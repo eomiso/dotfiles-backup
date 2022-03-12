@@ -175,6 +175,8 @@ unset __conda_setup
 #
 
 # >>> keychain for cron tasks on github with ssh
-/usr/local/bin/keychain --clear $HOME/.ssh/diya-sum-rsa
+if [ -x /usr/bin/keychain ]; then
+/usr/local/bin/keychain $HOME/.ssh/diya-sum-rsa
+fi
 source $HOME/.keychain/$HOST-sh
 
