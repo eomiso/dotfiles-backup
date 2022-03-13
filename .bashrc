@@ -151,5 +151,5 @@ export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export PATH="/home/eomiso/Workspace/qemu-5.2.0/build:$PATH"
-
+export PATH="/home/eomiso/Workspace/process-eomiso/qemu-5.2.0/build:$PATH"
+export PATH="/home/eomiso/.cargo/bin:$PATH"
