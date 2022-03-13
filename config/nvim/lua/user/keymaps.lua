@@ -20,10 +20,10 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<leader>h", "<C-w>h", opts)
+keymap("n", "<leader>j", "<C-w>j", opts)
+keymap("n", "<leader>k", "<C-w>k", opts)
+keymap("n", "<leader>l", "<C-w>l", opts)
 
 keymap("n", "<leader>e", ":Lex 20<cr>", opts)
 
@@ -75,3 +75,11 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>d", "<cmd>Telescope lsp_definitions<cr>", opts)
 keymap("n", "<leader>r", "<cmd>Telescope lsp_references<cr>", opts)
 
+	-- Nvimtree
+keymap("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
+
+-- Buffer line
+keymap("n", "<leader>x", ":Bdelete<cr>", opts)
+
+-- ToggleTerm
+keymap("n", "<c-h>", ":ToggleTerm direction=horizontal size=20<CR>", opts)

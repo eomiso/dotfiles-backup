@@ -92,8 +92,38 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
 
+  -- Autopair
+  use "windwp/nvim-autopairs"
+
+  -- Smart comment
+  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'JoosepAlviste/nvim-ts-context-commentstring' -- for jsx and js
+
+  -- Git signs
+  use "lewis6991/gitsigns.nvim"
+
+  -- Nvim Tree
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+
+  -- Bufferline
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+
   -- Plugins can have post-install/update hooks
   use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
+
+  -- Lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- ToggleTerm
+  use "akinsho/toggleterm.nvim"
+
+  use "lewis6991/impatient.nvim"
+  use "ahmedkhalf/project.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
