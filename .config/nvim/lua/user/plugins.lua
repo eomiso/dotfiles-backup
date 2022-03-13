@@ -70,13 +70,30 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-path' -- buffer completions
   use 'hrsh7th/cmp-cmdline' -- cmdline completions
   use 'saadparwaiz1/cmp_luasnip' -- snippet completions
+  use 'hrsh7th/cmp-nvim-lua' -- lua config completions
+  use 'hrsh7th/cmp-nvim-lsp' -- lua config completions
 
   -- Snippets
   use 'L3MON4D3/LuaSnip' -- Snippet engine
   use 'rafamadriz/friendly-snippets' -- a bunch of helpful snippets to use
 
+  -- LSP
+  use 'neovim/nvim-lspconfig' -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
+  use 'nvim-telescope/telescope-media-files.nvim'
+
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
+
   -- Plugins can have post-install/update hooks
-  use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
+  use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
