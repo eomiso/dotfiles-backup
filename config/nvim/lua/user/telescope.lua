@@ -25,8 +25,8 @@ telescope.setup {
         ["<C-c>"] = actions.close,
 
         -- Macbook doesn't have page down and up
-        -- ["<Down>"] = actions.move_selection_next,
-        -- ["<Up>"] = actions.move_selection_previous,
+        ["<Down>"] = actions.move_selection_next,
+        ["<Up>"] = actions.move_selection_previous,
 
         ["<CR>"] = actions.select_default,
         ["<C-x>"] = actions.select_horizontal,
@@ -36,8 +36,8 @@ telescope.setup {
         ["<C-u>"] = actions.preview_scrolling_up,
         ["<C-d>"] = actions.preview_scrolling_down,
 
-        ["<Up>"] = actions.results_scrolling_up,
-        ["<Down>"] = actions.results_scrolling_down,
+        ["<PageUp>"] = actions.results_scrolling_up,
+        ["<PageDown>"] = actions.results_scrolling_down,
 
         ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
         ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
@@ -66,16 +66,16 @@ telescope.setup {
         ["L"] = actions.move_to_bottom,
 
         -- Macbook doesn't have page down and up
-        -- ["<Down>"] = actions.move_selection_next,
-        -- ["<Up>"] = actions.move_selection_previous,
+        ["<Down>"] = actions.move_selection_next,
+        ["<Up>"] = actions.move_selection_previous,
         ["gg"] = actions.move_to_top,
         ["G"] = actions.move_to_bottom,
 
         ["<C-u>"] = actions.preview_scrolling_up,
         ["<C-d>"] = actions.preview_scrolling_down,
 
-        ["<Up>"] = actions.results_scrolling_up,
-        ["<Down>"] = actions.results_scrolling_down,
+        ["<PageUp>"] = actions.results_scrolling_up,
+        ["<PageDown>"] = actions.results_scrolling_down,
 
         ["?"] = actions.which_key,
       },
