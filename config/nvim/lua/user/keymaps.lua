@@ -82,4 +82,5 @@ keymap("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>x", ":Bdelete<cr>", opts)
 
 -- ToggleTerm
+keymap("n", "<c-q>", ":ToggleTerm direction=float<CR>", opts)
 keymap("n", "<c-h>", ":ToggleTerm direction=horizontal size=20<CR>", opts)
