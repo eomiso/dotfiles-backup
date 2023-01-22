@@ -1,7 +1,8 @@
 mv $HOME
-mkdir .local/homebrew/ && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C ./.local/homebrew
-cd ~/.local
-git -C $(brew --repo homebrew/core) checkout master
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/eomiso/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/eomiso/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install nvim
 brew install tmux
